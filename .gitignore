@@ -1,0 +1,42 @@
+# ---- Python ----
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# ---- Virtual Environment ----
+venv/
+.env/
+.venv/
+env/
+ENV/
+
+# ---- Hugging Face / LangChain Cache ----
+.cache/
+huggingface/
+logs/
+*.db
+
+# ---- dotenv files ----
+.env
+.env.local
+.env.*
+
+# ---- IDE / Editor ----
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ---- System Files ----
+.DS_Store
+Thumbs.db
+
+# ---- Jupyter / Notebook ----
+.ipynb_checkpoints/
+
+# ---- Build / Distribution ----
+build/
+dist/
+*.egg-info/
