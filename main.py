@@ -16,7 +16,7 @@ try:
 
     model = ChatHuggingFace(llm=llm)
     print("reached endpoint")
-    result = model.invoke("What is the capital of India?")
+    result = model.invoke("ask me a question to test my iq")
     print(result.content)
 except Exception as e:
     print(f"An error occurred: {e}")
