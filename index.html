@@ -3,91 +3,150 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dev.Create</title>
+  <title>Dev.Blogs</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="root">
-    <!-- Navbar -->
-    <div class="navbar">
-      <div class="logo">Dev.Blogs</div>
-      <div class="buttons">
-        <a href="#">Menu</a>
-      </div>
-    </div>
-
-    <!-- Container -->
-    <div class="container">
-      <!-- Hero Section -->
-      <section class="hero">
-        <!-- Glow background handled in CSS ::before -->
-
-        <!-- Hero headline -->
-        <div class="text">
-          Welcome to <span class="highlight">Dev.Blogs</span><br />
-        </div>
-
-
-      <h1 class="auto-text css-only">
-  Simplifying Complexities with
-  <span class="rotator" aria-hidden="true">
-    <span class="orange">insight.</span>
-    <span class="orange">creativity.</span>
-    <span class="orange">connection.</span>
-    <span class="orange">expression.</span>
-  </span>
-</h1>
-<div class="searchbox">
-    <div class="search">
-        <input type="text" class="textarea" placeholder="Search a blog">
-        <img src="./magnifying-glass.png"  class="searchicon">
-    </div>     
-</div>
-
-<div class="cards">
-  <div class="card">
-    <div class="card-inner">
-      <!-- Front side -->
-      <div class="card-front">
-        <img src="react-hooks.jpg" alt="React Hooks">
-        <h3>Understanding React Hooks</h3>
-      </div>
-      <!-- Back side -->
-      <div class="card-back">
-        <p>A deep dive into the world of React Hooks and how they can simplify your code.</p>
-      </div>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">Dev.Blogs</div>
+    <div class="buttons">
+      <a href="#home">Home</a>
+      <a href="#blog1">Blog 1</a>
+      <a href="#blog2">Blog 2</a>
+      <a href="#blog3">Blog 3</a>
     </div>
   </div>
 
-  <div class="card">
-    <div class="card-inner">
-      <div class="card-front">
-        <img src="css-grid.jpg" alt="CSS Grid vs Flexbox">
-        <h3>CSS Grid vs Flexbox</h3>
-      </div>
-      <div class="card-back">
-        <p>When to use CSS Grid and when to use Flexbox for layout design.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-inner">
-      <div class="card-front">
-        <img src="es6.jpg" alt="JavaScript ES6 Features">
-        <h3>JavaScript ES6 Features</h3>
-      </div>
-      <div class="card-back">
-        <p>An overview of the most important features introduced in ES6.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-</section>
+  <!-- Scroll Container -->
+  <div class="snap-container">
     
+    <!-- Hero Section -->
+    <section id="home" class="section hero-section">
+      <div class="container">
+        <div class="hero">
+          <div class="text">
+            Welcome to <span class="highlight">Dev.Blogs</span><br />
+          </div>
 
-    </div>
+          <h1 class="auto-text css-only">
+            Simplifying Complexities with
+            <span class="rotator" aria-hidden="true">
+              <span class="orange">insight.</span>
+              <span class="orange">creativity.</span>
+              <span class="orange">connection.</span>
+              <span class="orange">expression.</span>
+            </span>
+          </h1>
+
+          <div class="searchbox">
+            <div class="search">
+              <input type="text" class="textarea" placeholder="Search a blog">
+              <svg class="searchicon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+              </svg>
+            </div>
+          </div>
+
+          <div class="cards">
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <h3>Understanding React Hooks</h3>
+                </div>
+                <div class="card-back">
+                  <p>A deep dive into the world of React Hooks and how they can simplify your code.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <h3>CSS Grid vs Flexbox</h3>
+                </div>
+                <div class="card-back">
+                  <p>When to use CSS Grid and when to use Flexbox for layout design.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <h3>JavaScript ES6 Features</h3>
+                </div>
+                <div class="card-back">
+                  <p>An overview of the most important features introduced in ES6.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section 1 -->
+    <section id="blog1" class="section blog pop1">
+      <div class="content">
+        <h2>Understanding React Hooks</h2>
+        <p>
+          React Hooks revolutionized the way we write React components. They allow you to use state and other React features without writing a class, making your code more readable and maintainable.
+        </p>
+        <p>
+          The most commonly used hooks are useState and useEffect. useState lets you add state to functional components, while useEffect handles side effects like data fetching, subscriptions, or manually changing the DOM.
+        </p>
+        <p>
+          By mastering hooks, you can write cleaner, more efficient React applications that are easier to test and debug. Custom hooks also enable you to extract and reuse stateful logic across multiple components.
+        </p>
+        <a href="#" class="cta">Read Full Article</a>
+      </div>
+    </section>
+
+    <!-- Blog Section 2 -->
+    <section id="blog2" class="section blog pop2">
+      <div class="content">
+        <h2>CSS Grid vs Flexbox</h2>
+        <p>
+          Both CSS Grid and Flexbox are powerful layout tools, but they excel in different scenarios. Flexbox is ideal for one-dimensional layouts—either rows or columns—making it perfect for navigation bars, card layouts, and aligning items within a container.
+        </p>
+        <p>
+          CSS Grid, on the other hand, shines when you need two-dimensional layouts with both rows and columns. It's excellent for creating complex page layouts, magazine-style designs, and responsive grids that adapt to different screen sizes.
+        </p>
+        <p>
+          The best approach? Use them together! Flexbox for component-level layouts and Grid for page-level structure creates a powerful combination that handles any design challenge.
+        </p>
+        <a href="#" class="cta">Learn More</a>
+      </div>
+    </section>
+
+    <!-- Blog Section 3 -->
+    <section id="blog3" class="section blog pop3">
+      <div class="content">
+        <h2>JavaScript ES6 Features</h2>
+        <p>
+          ES6 (ECMAScript 2015) introduced groundbreaking features that transformed JavaScript development. Arrow functions provide cleaner syntax and lexical 'this' binding, while destructuring makes it easy to extract values from arrays and objects.
+        </p>
+        <p>
+          Template literals revolutionized string manipulation with embedded expressions and multi-line support. The spread operator and rest parameters simplified array and object operations, making code more expressive and concise.
+        </p>
+        <p>
+          Promises and async/await changed how we handle asynchronous operations, making code more readable and maintainable. Classes brought a more familiar syntax for object-oriented programming, though they're syntactic sugar over JavaScript's prototypal inheritance.
+        </p>
+        <a href="#" class="cta">Explore ES6</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="section footer">
+      <div class="footer-inner">
+        <h3>Dev.Blogs</h3>
+        <p>Simplifying development, one blog at a time.</p>
+        <p style="margin-top: 20px; opacity: 0.7;">© 2024 Dev.Blogs. All rights reserved.</p>
+      </div>
+    </section>
+
   </div>
 </body>
 </html>
